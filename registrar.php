@@ -20,22 +20,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrar Estudiante</title>
-</head>
-<body>
-    <h1>Registrar Estudiante</h1>
-    <form method="post" action="">
-        <label for="nombre">Nombre del Estudiante:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <button type="submit">Registrar</button>
-    </form>
-    <br>
-    <?php if (!empty($mensaje)) echo "<p>$mensaje</p>"; ?>
-    <a href="mostrar_lista.php">Ver lista de estudiantes</a>
-</body>
-</html>
